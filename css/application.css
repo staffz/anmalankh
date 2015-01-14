@@ -1,0 +1,161 @@
+
+
+body {
+	color: #7891a3;
+	font-weight: bold;
+}
+
+a {
+	color: #000;
+	font-weight: normal;
+}
+
+a:hover {
+	color: #000;
+
+}
+.container {
+	max-width: 960px;
+}
+
+.small-text {
+	margin-top: 6px;
+	font-size: 12px;
+}
+
+.kh-logo {
+ 		background-image: url('../images/logo.png');
+ 		width: 413px;
+ 		height: 77px;
+    background-size: 413px 77px;
+    margin: 25px 0px 35px 0px;
+}
+
+
+.current-step {
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+	margin: 0px 15px 20px 15px;
+	padding: 0px;
+}
+
+.navigation {
+	margin: 0px;
+	padding: 0px;
+}
+
+.navigation li{
+	display: block;
+	float: left;
+	width: 180px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #c1cacf;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+	text-align: center;
+	margin-right: 6px;
+	margin-bottom: 14px;
+	cursor: pointer;
+}
+
+.navigation li:hover {
+	text-decoration: underline;
+}
+
+.navigation li.selected{
+  background-color: rgb(51, 255, 153);
+  box-shadow: 3px 5px 15px 0px rgba(255, 204, 204, 0.8);
+
+}
+
+.send-application {
+	  background-color: rgb(229, 239, 246);
+	  border: 0px solid;
+		-webkit-box-shadow: inset -3px 3px 5px 0px rgba(255, 255, 255, 0.45),
+												inset 2px -2px 5px 0px rgba(0, 0, 0, 0.25);
+		-moz-box-shadow:    inset -3px 4px 5px 0px rgba(255, 255, 255, 0.45),
+												inset 2px -2px 5px 0px rgba(0, 0, 0, 0.25);
+		box-shadow:         inset -3px 4px 5px 0px rgba(255, 255, 255, 0.45)
+											  inset 2px -2px 5px 0px rgba(0, 0, 0, 0.45);
+		width: 180px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 16px;
+		font-weight: bold;
+		color: #c1cacf;
+		text-align: center;
+		}
+
+
+	.main-form {
+		margin-top: 30px;
+	}
+
+.form-inline .form-group {
+	margin-bottom: 25px;
+}
+
+.form-group label {
+	font-size: 16px;
+	font-weight: normal;
+	color: #000;
+}
+.form-inline .form-control {
+	border: 0px solid;
+  background-color: rgb(255, 222, 204);
+  box-shadow: inset -2px 2px 6px 0px rgba(51, 255, 153, 0.35);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 4px 6px 4px 8px;
+}
+
+.form-inline .form-control[type=text] {
+
+}
+
+
+
+.button {
+  background-color: rgb(51, 255, 153);
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+  border: 0px solid;
+	-webkit-box-shadow: inset -3px 3px 5px 0px rgba(255, 255, 255, 0.45),
+											inset 2px -2px 5px 0px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow:    inset -3px 4px 5px 0px rgba(255, 255, 255, 0.45),
+											inset 2px -2px 5px 0px rgba(0, 0, 0, 0.25);
+	box-shadow:         inset -3px 4px 5px 0px rgba(255, 255, 255, 0.45)
+										  inset 2px -2px 5px 0px rgba(0, 0, 0, 0.45);
+	padding: 10px;
+
+}
+
+
+footer {
+	margin-top: 60px;
+}
+
+footer .top-divider {
+	border-top: 1px solid #9eb2c0;
+	height: 1px;
+	margin-top: 10px;
+	margin-bottom: 8px;
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+ 	.kh-logo {
+ 		background-image: url('../images/logoX2.png')
+ 	}
+}
