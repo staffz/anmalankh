@@ -120,8 +120,13 @@ h4 {
 }
 
 .form-inline .form-group.check-box-margin {
-	margin-left: 28px;
+	margin-left: 30px;
 }
+
+.form-inline .form-group.check-box-margin .css-label{
+	margin-left: -30px;
+}
+
 
 .form-group label {
 	font-size: 16px;
@@ -208,6 +213,12 @@ footer .top-divider {
 	margin-bottom: 8px;
 }
 
+/* Styles for Step 3 */
+.behorighet-row {
+	margin-bottom: 20px;
+}
+
+
 /* Styles for Step 5 */
 .uploaded-artwork {
 	max-width: 300px;
@@ -232,6 +243,41 @@ footer .top-divider {
 .arbetsprov-active h4{
 	color: #1000e8;
 }
+
+/* Checkbox hack */
+input[type=checkbox].css-checkbox {
+	position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label, input[type=checkbox].css-checkbox + label.css-label.clr {
+	padding-left:34px;
+	min-height:20px; 
+	display:inline-block;
+	line-height:20px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	vertical-align:middle;
+	cursor:pointer;
+
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label, input[type=checkbox].css-checkbox + label.css-label.chk {
+	background-image:url('../images/checkbox_checked.png');
+	background-repeat: no-repeat;
+
+}
+label.css-label {
+	background-image:url('../images/checkbox.png');
+	background-repeat: no-repeat;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
