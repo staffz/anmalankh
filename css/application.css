@@ -3,6 +3,7 @@
 body {
 	color: #7891a3;
 	font-weight: bold;
+	font-size: 16px;
 }
 
 a {
@@ -31,11 +32,21 @@ a:hover {
     margin: 25px 0px 35px 0px;
 }
 
+h1 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #000;	
+}
+h1 a {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+h1.application-description {
+	margin-top: 35px;
+}
 
 .current-step {
-	font-size: 16px;
-	font-weight: bold;
-	color: #000;
 	margin: 0px 15px 20px 15px;
 	padding: 0px;
 }
@@ -98,6 +109,10 @@ a:hover {
 	margin-bottom: 25px;
 }
 
+.form-inline .form-group.check-box-margin {
+	margin-left: 28px;
+}
+
 .form-group label {
 	font-size: 16px;
 	font-weight: normal;
@@ -116,7 +131,12 @@ a:hover {
 
 }
 
-
+.form-inline .form-control[type=checkbox] {
+	width: 22px;
+	height: 20px;
+	display: inline-block;
+	margin-left: -28px;
+}
 
 .button {
   background-color: rgb(51, 255, 153);
@@ -131,7 +151,18 @@ a:hover {
 	box-shadow:         inset -3px 4px 5px 0px rgba(255, 255, 255, 0.45)
 										  inset 2px -2px 5px 0px rgba(0, 0, 0, 0.45);
 	padding: 10px;
+	min-width: 200px
 
+}
+
+.button.small {
+		padding: 8px;
+		font-size: 13px;
+		min-width: 100px
+}
+
+.button.delete {
+  background-color: rgb(255, 222, 205);
 }
 
 
