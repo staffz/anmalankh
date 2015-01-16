@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ansökan till konsthögskolan</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      <link rel="stylesheet" href="css/intlTelInput.css">
+      <link href="css/application.css" rel="stylesheet">
+
+  </head>
+  <body>
+  <form class="form-inline">
+
+  <div class="container">
+  <div class="row">
+      <div class="col-md-12 ">
+        <div class="kh-logo"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+      <div class="pull-right"><a href="#">Logga ut</a></div>
+      <h1 class="current-step">Ansökan Masterprogrammet i fri konst</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+      <ul class="navigation">
+        <li>1. Personuppgifter</li>
+        <li>2. Studieavgift</li>
+        <li>3. Behörighet</li>
+        <li>4. Motiverande text</li>
+        <li  class="selected">5. Arbetsprover</li>
+      </ul>
+      <input type="button" value="Skicka in" class="send-application">
+      </div>
+    </div>
+
+     <div class="row">
+      <div class="col-md-12">
+      <h1 class="application-description"> Du kan ladda upp 5 st bilder/videos/ljudfiler till samma arbetsprov. För längre filmer/videoverk rekommenderas att du också bifogar en synopsis/trailer. Filerna kommer att läggas i alfabetisk ordning.
+
+</h1>
+      </div>
+    </div>
+
+
+    <div class="row main-form">
+     <div class="col-md-5">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="form-group full-width">
+            <label for="titelInput">Titel</label><br />
+            <input type="text" class="form-control full-width" id="titelInput" placeholder="Verkets titel" name="titel" value="">
+          </div>
+        </div>
+        <div class="col-md-3">
+           <div class="form-group full-width">
+            <label for="createdInput">År</label><br />
+            <select name="created" id="createdInput" class="form-control "><option value=""></option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option></select>          </div>
+        </div>
+      </div>
+
+        
+       
+        <div class="form-group full-width">
+          <label for="materialInput">Material</label><br />
+          <input type="text" class="form-control"  id="materialInput" placeholder="Lera, stål eller olja" name="material" value="">
+        </div>
+
+
+
+        <div class="form-group full-width">
+          <label for="sizeInput">Storlek</label><br />
+          <input type="text" class="form-control" id="sizeInput" placeholder="4900mm x 5000mm" name="size" value="">
+        </div>
+
+         <div class="form-group full-width">
+          <label for="lengthInput">Längd</label><br />
+          <input type="text" class="form-control" id="lengthInput" placeholder="2 min och 45sek" name="length" value="">
+        </div>
+
+        <div class="form-group full-width">
+          <label for="commInput">Text om verket, max 300 tecken (ej obl.)</label><br />
+          <textarea class="form-control" id="commInput" name="comm" rows="10"></textarea>
+
+          <div id="commInputFeedback" class="character-counter"></div>
+        </div>
+     </div>
+
+     <div class="col-md-6">
+      <div class="uploaded-file">
+        <img src="http://media-cdn.tripadvisor.com/media/photo-s/01/41/d9/65/nevada-museum-of-art.jpg" class="uploaded-artwork" alt=""> <input type="submit" name="" value="Radera" class="button small delete"  />
+        <p class="blue-text">filnamnet.png</p>
+      </div>
+       <div class="uploaded-file">
+        <img src="http://media-cdn.tripadvisor.com/media/photo-s/01/41/d9/65/nevada-museum-of-art.jpg" class="uploaded-artwork" alt=""> <input type="submit" name="" value="Radera" class="button small delete"  />
+        <p class="blue-text">filnamnet 2.png</p>
+      </div>
+      <div class="form-group">
+        <label for="fileInput">&nbsp;</label><br />
+         <input type="file" class="form-control"  placeholder="ba_examensbevis.pdf" name="" value=""> <input type="submit" name="" value="Ladda upp" class="button small" />
+      </div>
+     </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <input type="submit" name="" value="Spara Uppgifter" class="button" />
+      </div>
+    </div>
+  </div>
+  </form>
+
+  <footer class="container">
+    <div class="row">
+      <div class="col-md-12">
+      <div class="top-divider"></div>
+       Royal Institute of Art / Kungl. Konsthögskolan <br />
+     +46 (0)8-614 40 00
+      </div>
+    </div>
+  </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/intlTelInput.min.js"></script>
+    <script src="js/application.js"></script>
+    <script src="js/step5.js"></script>
+
+  </body>
+</html>
