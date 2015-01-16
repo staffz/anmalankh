@@ -1,5 +1,3 @@
-
-
 body {
 	color: #7891a3;
 	font-weight: bold;
@@ -77,9 +75,12 @@ h1.application-description {
 }
 
 .navigation li.selected{
+	text-decoration: underline;
+}
+
+.navigation li.ready{
   background-color: rgb(51, 255, 153);
   box-shadow: 3px 5px 15px 0px rgba(255, 204, 204, 0.8);
-
 }
 
 .send-application {
@@ -89,7 +90,7 @@ h1.application-description {
 												inset 2px -2px 5px 0px rgba(0, 0, 0, 0.25);
 		-moz-box-shadow:    inset -3px 4px 5px 0px rgba(255, 255, 255, 0.45),
 												inset 2px -2px 5px 0px rgba(0, 0, 0, 0.25);
-		box-shadow:         inset -3px 4px 5px 0px rgba(255, 255, 255, 0.45)
+		box-shadow:         inset -3px 4px 5px 0px rgba(255, 255, 255, 0.45),
 											  inset 2px -2px 5px 0px rgba(0, 0, 0, 0.45);
 		width: 180px;
 		height: 40px;
@@ -98,12 +99,11 @@ h1.application-description {
 		font-weight: bold;
 		color: #c1cacf;
 		text-align: center;
-		}
+}
 
-
-	.main-form {
-		margin-top: 30px;
-	}
+.main-form {
+	margin-top: 30px;
+}
 
 .form-inline .form-group {
 	margin-bottom: 25px;
@@ -119,16 +119,12 @@ h1.application-description {
 	color: #000;
 }
 .form-inline .form-control {
-	border: 0px solid;
+  border: 0px solid;
   background-color: rgb(255, 222, 204);
   box-shadow: inset -2px 2px 6px 0px rgba(51, 255, 153, 0.35);
   font-size: 16px;
   font-weight: bold;
   padding: 4px 6px 4px 8px;
-}
-
-.form-inline .form-control[type=text] {
-
 }
 
 .form-inline .form-control[type=checkbox] {
@@ -151,7 +147,7 @@ h1.application-description {
 	box-shadow:         inset -3px 4px 5px 0px rgba(255, 255, 255, 0.45)
 										  inset 2px -2px 5px 0px rgba(0, 0, 0, 0.45);
 	padding: 10px;
-	min-width: 200px
+	min-width: 200px;
 
 }
 
