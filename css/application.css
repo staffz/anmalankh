@@ -4,6 +4,7 @@ body {
 	font-size: 16px;
 }
 
+
 a {
 	color: #000;
 	font-weight: normal;
@@ -20,6 +21,20 @@ a:hover {
 .small-text {
 	margin-top: 6px;
 	font-size: 12px;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.normal-black {
+	font-weight: normal;
+	color: #000;
+}
+
+.no-margins {
+	margin: 0px;
+	padding: 0px;
 }
 
 .kh-logo {
@@ -156,6 +171,10 @@ h4 {
 	margin-left: -28px;
 }
 
+.form-inline .button-and-input-row {
+	margin-bottom: 5px;
+}
+
 .uploaded-file .button {
 	vertical-align: bottom;
 }
@@ -213,10 +232,29 @@ footer .top-divider {
 	margin-bottom: 8px;
 }
 
+/* Styles for Step 2 */
+.avgift-row {
+		margin-bottom: 22px;
+}
+
+.avgift-row .form-group {
+	display: block;
+}
+
+.form-inline .button-and-input-row.top-m-10 {
+	margin-top: 10px;
+}
+
+
+.avgift-row  {
+	margin-top: 5px;
+}
+
 /* Styles for Step 3 */
 .behorighet-row {
 	margin-bottom: 20px;
 }
+
 
 
 /* Styles for Step 5 */
