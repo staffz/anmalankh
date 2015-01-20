@@ -136,6 +136,7 @@ h4 {
 
 .form-inline .form-group.check-box-margin {
 	margin-left: 30px;
+	width: 100%;
 }
 
 .form-inline .form-group.check-box-margin .css-label{
@@ -206,6 +207,15 @@ h4 {
 
 }
 
+.button:hover {
+-webkit-box-shadow: inset -3px 3px 2px 0px rgba(255, 255, 255, 0.45),
+											inset 2px -2px 2px 0px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow:    inset -3px 4px 2px 0px rgba(255, 255, 255, 0.45),
+											inset 2px -2px 2px 0px rgba(0, 0, 0, 0.25);
+	box-shadow:         inset -3px 4px 2px 0px rgba(255, 255, 255, 0.45)
+										  inset 2px -2px 2px 0px rgba(0, 0, 0, 0.45);
+}
+
 .button.small {
 		padding: 8px;
 		font-size: 13px;
@@ -255,7 +265,11 @@ footer .top-divider {
 	margin-bottom: 20px;
 }
 
-
+/* Styles for Step 4 */
+.bullet-list-text {
+	line-height: 32px;
+	margin-bottom: 30px;
+}
 
 /* Styles for Step 5 */
 .uploaded-artwork {

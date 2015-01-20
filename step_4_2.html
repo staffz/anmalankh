@@ -31,7 +31,7 @@
     <div class="row">
       <div class="col-md-12">
       <div class="pull-right"><a href="#">Logga ut</a></div>
-      <h1 class="current-step">Ansökan Masterprogrammet i fri konst</h1>
+      <h1 class="current-step">5-åriga programmet i fri konst</h1>
       </div>
     </div>
     <div class="row">
@@ -39,8 +39,8 @@
       <ul class="navigation">
         <li>1. Personuppgifter</li>
         <li >2. Studieavgift</li>
-        <li class="selected" >3. Behörighet</li>
-        <li>4. Motiverande text</li>
+        <li >3. Behörighet</li>
+        <li class="selected" >4. Motiverande text</li>
         <li>5. Arbetsprover</li>
       </ul>
       <input type="button" value="Skicka in" class="send-application">
@@ -50,66 +50,25 @@
    
      <div class="row">
       <div class="col-md-12">
-      <h1 class="application-description"> För tillträde till masterprogrammet i fri konst krävs kandidatexamen i fri konst eller motsvarande kunskaper. </h1>
+      <p class="normal-black">Här har du möjlighet (ej obligatoriskt) att ladda upp en motiverande text som beskriver ditt konstnärliga arbete. Den får vara max 2500 tecken (ungefär en A4-sida). Texten ska vara på engelska, men det går bra att komplettera den engelska texten med en svensk version.
+      </p>
       </div>
     </div>
 
-    <div class="row main-form behorighet-row">
-      <div class="col-md-12">
-        <div class="form-group check-box-margin">
-         <input type="radio" name="behorighet" value="" class="form-control css-checkbox" id="kandexCheckbox" name="kandexCheckbox" > 
-         <label for="kandexCheckbox" class="css-label"> Jag har en kandidatexamen i fri konst</label>
-
+    <div class="row main-form avgift-row">
+      <div class="col-md-8">
+        <div class="form-group full-width">
+          <textarea class="form-control" id="commInput" name="comm" rows="32" maxlength="2500"></textarea>
 
         </div>
 
       </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-8 behorighet-row">
-        <div class="form-group check-box-margin">
-           <input type="radio" name="behorighet" value=""  class="form-control css-checkbox" id="studKandexCheckbox"> <label for="studKandexCheckbox" class="css-label">
-
-           Jag studerar för närvarande på ett kandidatprogram i fri konst och kommer att komplettera med examensbevis före terminsstart.</label>
-         
-
-        </div>
-
+      <div class="col-md-4">
+          <div id="commInputFeedback" class="character-counter"></div>
       </div>
     </div>
 
-    <div class="row behorighet-row">
-      <div class="col-md-11">
-        <div class="form-group check-box-margin">
-             <input type="radio" name="behorighet" value=""  class="form-control css-checkbox" id="ejKandexCheckbox" > <label for="ejKandexCheckbox" class="css-label">
-           Jag har inte en kandidatexamen i fri konst, men har följande dokument som jag vill åberopa för att visa på motsvarande kunskaper. Bifoga en motivering om hur du anser att bifogade dokument styrker din behörighet.</label>
-        </div>
-
-      </div>
-    </div>
-
-
-    <div class="row">
-      <div class="col-md-12">
-      <h1 class="application-description"> Ladda upp filer: </h1>
-      </div>
-    </div>
-
-    <div class="row ">
-      <div class="col-md-12">
-      <div class="uploaded-file">
-        <a href="#" target="_blank" class="blue-text">filnamnet.png </a> <input type="submit" name="" value="Radera" class="button small delete"  />
-
-      </div>
-     
-      <div class="form-group">
-        <label for="fileInput">&nbsp;</label><br />
-         <input type="file" class="form-control"  placeholder="ba_examensbevis.pdf" name="" value=""> <input type="submit" name="" value="Ladda upp" class="button small" />
-      </div>
-
-    </div>
-    </div>
+    
 
     
     <div class="row ">
@@ -137,6 +96,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/intlTelInput.min.js"></script>
     <script src="js/application.js"></script>
+    <script src="js/step4_1.js"></script>
 
   </body>
 </html>
