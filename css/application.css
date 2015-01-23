@@ -253,6 +253,12 @@ footer .top-divider {
 	margin-bottom: 8px;
 }
 
+/* Styles for step 1 */
+#sexInput {
+	width: 100%;
+	min-width: 100px;
+}
+
 /* Styles for Step 2 */
 .avgift-row {
 		margin-bottom: 22px;
@@ -283,6 +289,11 @@ footer .top-divider {
 }
 
 /* Styles for Step 5 */
+
+#createdInput {
+	width: 100%;
+	min-width: 100px;
+}
 .uploaded-artwork {
 	max-width: 300px;
 }
