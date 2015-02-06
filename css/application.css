@@ -312,6 +312,23 @@ footer .top-divider {
 	margin-bottom: 30px;
 }
 
+.ansokan-row {
+	margin-bottom: 2px;
+}
+
+.ansokan-detail-row {
+	display: none;
+	border-bottom: 1px solid #9eb2c0;
+}
+
+.form-inline .ansokan-row .form-group {
+	margin-bottom: 8px;
+}
+.form-inline .ansokan-detail-row .form-group {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
 /* Styles for Step 5 */
 
 #createdInput {
@@ -342,7 +359,7 @@ footer .top-divider {
 	color: #1000e8;
 }
 
-/* Radio hack */
+/* Radio and checkbox hack */
 input[type=radio].css-checkbox {
 	position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
 }
@@ -362,8 +379,8 @@ input[type=radio].css-checkbox + label.css-label, input[type=radio].css-checkbox
 input[type=radio].css-checkbox:checked + label.css-label, input[type=radio].css-checkbox + label.css-label.chk {
 	background-image:url('../images/checkbox_checked.png');
 	background-repeat: no-repeat;
-
 }
+
 label.css-label {
 	background-image:url('../images/checkbox.png');
 	background-repeat: no-repeat;
@@ -375,7 +392,26 @@ label.css-label {
 	user-select: none;
 }
 
+input[type=checkbox].css-checkbox {
+	position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
 
+input[type=checkbox].css-checkbox + label.css-label, input[type=checkbox].css-checkbox + label.css-label.clr {
+	padding-left:34px;
+	min-height:20px; 
+	display:inline-block;
+	line-height:20px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	vertical-align:middle;
+	cursor:pointer;
+
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label, input[type=checkbox].css-checkbox + label.css-label.chk {
+	background-image:url('../images/checkbox_checked.png');
+	background-repeat: no-repeat;
+}
 
 
 @keyframes done-fader {
