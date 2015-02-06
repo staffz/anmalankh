@@ -122,8 +122,31 @@ h4 {
 }
 
 .send-application.done {
-  background-color: #fdff33;
+  background-color: rgb(51, 255, 153);
   color: #000;
+    animation-name: done-fader;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: none;
+  animation-direction: alternate;
+
+  -webkit-animation-name: done-fader;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: none;
+  -webkit-animation-direction: alternate;
+
+  -moz-animation-name: done-fader;
+  -moz-animation-duration: 2s;
+  -moz-animation-delay: 0s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-fill-mode: none;
+  -moz-animation-direction: alternate
 }
 
 .application-sent {
@@ -349,6 +372,40 @@ label.css-label {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+
+
+
+
+@keyframes done-fader {
+  0% {
+	  background-color: rgb(51, 255, 153);
+  }
+  100% {
+	  background-color: rgb(200, 255,220 );
+	  opacity: 0.8;
+  }
+}
+
+@-webkit-keyframes done-fader {
+  0% {
+	  background-color: rgb(51, 255, 153);
+  }
+  100% {
+	  background-color: rgb(200, 255,220 );
+	  opacity: 0.8;
+  }
+}
+
+@-moz-keyframes done-fader {
+  0% {
+	  background-color: rgb(51, 255, 153);
+  }
+  100% {
+	  background-color: rgb(200, 255,220 );
+	  opacity: 0.8;
+
+  }
 }
 
 

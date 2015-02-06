@@ -33,14 +33,15 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-5">
+      <h1 class="application-description"> Logga in</h1>
       <form action="login2.php" method="post" class="form-inline">
 
       <div class="form-group">
           <label for="efternamnInput">Email Address:</label><br />
           <input type="text" name="email" size="30" maxlength="80"  class="form-control"/>
-        </div>
-<br />
+      </div>
+      <br />
 
       <div class="form-group">
           <label for="efternamnInput">Lösenord:</label><br />
@@ -49,8 +50,47 @@
       <input type="submit" name="submit" value="Login" class="button"/></p>
       	<input type="hidden" name="submitted" value="TRUE" />
       </form>
-
     </div>
+    <div class="col-md-6">
+      <h1 class="application-description"> Registera dig som ny sökande</h1>
+      <p class="normal-black ">
+        Fyll i dina personuppgifter. Ett lösenord kommer sedan att skickas till dig via e-post (det kan ta upp till en timme i vissa fall).
+      </p>
+      <form>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="efternamnInput">Förnamn*</label><br />
+              <input type="text" name="email" size="30" maxlength="80"  class="form-control"/>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+             <label for="efternamnInput">Efternamn*</label><br />
+             <input type="text" name="email" size="30" maxlength="80"  class="form-control"/>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="efternamnInput">e-post*</label><br />
+            <input type="text" name="email" size="30" maxlength="80"  class="form-control"/><br /> 
+            <input type="submit" name="submit" value="Skicka" class="button"/>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+           <label for="efternamnInput">Bekräfta e-post*</label><br />
+           <input type="text" name="email" size="30" maxlength="80"  class="form-control"/>
+          </div>
+        </div>
+      </div>
+    </form>
+     <p class="normal-black ">
+     <br />
+        obligatorisk uppgift *
+      </p>
   </div>
 </div>
 
